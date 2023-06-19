@@ -1,38 +1,63 @@
-.App {
-  text-align: center;
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; 
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  font-size: 62.5%;
+  font-family: sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+#accordion-area{
+  width: 100%;
   min-height: 100vh;
+  padding: 30px 0px;
+  background-color: #f1f1f1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.accordion{
+  width: 350px;
+  height: 100%;
+  background-color: white;
+  padding: 0px 30px;
+  padding-bottom: 30px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+  border-radius: .5rem;
+}
+
+.accordion .heading{
+  text-transform: capitalize;
+  font-size: 1.2rem;
+  text-align: center;
+  padding: 30px 0px;
+}
+
+.accordion-items{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  grid-gap: 20px;
+
 }
 
-.App-link {
-  color: #61dafb;
+.accordion-items .accordion-item .item-heading{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+    padding: 5px 10px;
+    background: #e9eef0;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.accordion-items .accordion-item p{
+  padding: 15px 8px 23px 8px ;
+  background: #FFEBEE;
+  line-height: 1rem;
+  color: #333;
+  font-weight: 500;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
 }
